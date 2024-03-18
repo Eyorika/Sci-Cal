@@ -1,0 +1,145 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f6cd17;
+    user-select: none;
+}
+
+:root{
+    --primary-color: #f6cd17;
+    --secondary-color: #000;
+    --tertiary-color: #fff;
+    --quaternary-color: #000;
+    --quinary-color: #000;
+    --senary-color: #000;
+    --box-shadow:  inset 5px 5px +8px rgba(140, 138, 138, 0.267), inset -5px -5px 8px #fff;
+
+}
+
+.container{
+    margin-left: 1.8em;
+    padding: 20px;
+    border-radius: 8px;
+    background: #040b36a4;
+    box-shadow: 2px 13px 20px #cbced1,
+    -2px -20px 50px #ffffff;
+
+}
+
+.content{
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.row button{
+    width: 60px;
+    padding: 30px;
+    outline: none;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: none;
+    transition: .5s;
+    box-shadow: +5px +5px 8px #fff;
+    color: #000;
+
+}
+.row button:hover{
+
+    box-shadow: inset 5px 5px +8px rgba(140, 138, 138, 0.267), inset -5px -5px 8px #fff;
+    background: #fff;
+
+}
+.display #screen{
+    margin-bottom: .5em;
+    width: auto;
+    height: 70px;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: right;
+    padding-right: -5em;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+#eval{
+    background: #17eff6d8;
+    color: #fff;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+    inset -5px -5px 8px #00ace6;
+
+}
+
+#eval:hover{
+    box-shadow: inset 5px 5px 8px #a8b2b6,
+    inset -5px -5px 8px #b5c6cb;;
+
+}
+#ac{
+    background: red;
+    color: white;
+    text-align: center;
+
+}
+#ac:hover{
+    box-shadow: inset 5px 5px 8px #e14b2e,
+    inset -5px -5px 8px #ce4708;
+}
+
+#ce{
+    background: #e22605;
+    color: #fff;
+
+}
+#ce:hover{
+    box-shadow: inset 5px 5px 8px #e60073,
+    inset -5px -5px 8px #ff3399;
+}
+
+.transition {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+.transition span {
+    position: absolute;
+    display: block;
+    color: #ce4708;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 15px;
+    box-shadow: 5px 10px 10px #a55306a1, 5px +5px 10px #f5c60b;
+    overflow:visible;
+    animation: slideText 5s linear infinite;
+    white-space: nowrap;
+}
+@keyframes slideText {
+    50% {
+        transform: translateX(40%);
+        background-color: #dee3ba;
+        background: #e60073;
+        color: white;
+    }
+    75% {
+        transform: translateX(-5%);
+        text-transform: lowercase;
+        background-color: #6f591c;
+        color: black;
+    }
+    100%{
+        transform: translateZ(100%);
+        background-color: #dee3ba;
+    }
+}
